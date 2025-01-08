@@ -1,0 +1,13 @@
+read -p "Enter a number: " number
+
+if [[ $number =~ ^[0-9]+$ ]]; then
+  if [ $number -gt 100 ]; then
+    echo "Greater than 100"
+  elif [ $number -lt 100 ]; then
+    echo "Smaller than 100"
+  else
+    echo "Equal to 100"
+  fi
+else
+  echo "Enter a valid number"
+fi
